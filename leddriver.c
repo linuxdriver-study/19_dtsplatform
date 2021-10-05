@@ -217,7 +217,7 @@ static int __init leddevice_init(void)
         if (ret) {
                 printk("failed to register led device!\n");
         }
-        return 0;
+        return ret;
 }
 
 static void __exit leddevice_exit(void)
